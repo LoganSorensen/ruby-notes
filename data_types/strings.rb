@@ -44,7 +44,7 @@ puts 'Hello #{name}' #=> "Hello #{name}"
 # downcase
 "HeLLo".downcase #=> "hello"
 
-# emmpty?
+# empty?
 "hello".empty? #=> false
 "".empty? #=> true
 
@@ -72,6 +72,11 @@ puts 'Hello #{name}' #=> "Hello #{name}"
 
 # prepend
 "!".prepend("hello, ", "world") #=> "hello, world!"
+
+# chomp
+name = "Bob\n"
+name #=> "Bob\n"
+name.chomp #=> "Bob"
 
 # string conversion
 5.to_s #=> "5"
