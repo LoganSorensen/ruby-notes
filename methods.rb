@@ -39,6 +39,7 @@ puts 12.between?(10, 15)  #=> true
 
 
 # bang methods, denoted with a !, modify the original value
+whisper = "Hello everybody"
 puts whisper.downcase! #=> "hello everybody"
 puts whisper #=> "hello everybody"
 # this is the equivalent of writing whisper = whisper.downcase

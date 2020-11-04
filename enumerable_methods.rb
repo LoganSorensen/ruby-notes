@@ -68,3 +68,15 @@ my_numbers = [5, 6, 7, 8]
 
 my_numbers.reduce(1000) { |sum, number| sum + number }
 #=> 1026
+
+# bang methods modify the original object they're called on, many enumerable methods have bang variants
+friends = ['Sharon', 'Leo', 'Leila', 'Brian', 'Arun']
+
+friends.map! { |friend| friend.upcase }
+#=> `['SHARON', 'LEO', 'LEILA', 'BRIAN', 'ARUN']`
+
+friends
+#=> `['SHARON', 'LEO', 'LEILA', 'BRIAN', 'ARUN']`
+
+# & can be used for a method that doesn't require any arguments
+["11", "21", "5"].amp(&:to_i)
